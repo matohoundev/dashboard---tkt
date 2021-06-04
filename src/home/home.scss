@@ -1,0 +1,162 @@
+@import '../App.scss';
+
+// aside 
+
+aside {
+    margin: 4vh 0;
+    font-size: $sz5;
+}
+
+aside ul li {
+    margin: 2vh 4vw;
+    padding: 0 2vw;
+    @extend %border;
+    @extend %box;
+}
+
+span {
+    color: $main-color;
+    padding-right: 1vw;
+}
+
+aside ul > li:last-child span{
+    color: $third-color;
+}
+
+// sort
+
+.search {
+    padding: 1vh 0;
+    padding-left: 4vw;
+    @extend %border;
+}
+
+.sort {
+    color: $main-color;
+    background-color: $color-clear;
+    border: 1px solid $main-color;
+    padding: 1vh 1vw;
+    // margin-right: 2vw;
+}
+
+    .sort:hover {
+        border: 2px solid $secondary-color;
+    }
+
+    .sort:active {
+        border: 3px solid $main-color;
+    }
+
+// list
+
+.head-list{
+    font-size: $sz5;
+}
+
+.companies {
+    padding: 2.5vh 0;
+}
+
+.companies h2 {
+    margin-bottom: 2.5vh;
+    padding-left: 3vw;
+}
+
+.companies ul:not(.head-list) {
+    padding: 1vh 0;
+    display: flex;
+    align-items: center;
+    @extend %box;
+}
+
+    
+    .companies ul:not(.head-list):hover {
+        transform: scale(1.01);
+    }
+
+
+.companies ul {
+    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.companies ul li:first-child{
+    width: 10%;
+}
+
+.companies ul li:nth-child(2){
+    width: 40%;
+}
+
+.companies ul li:nth-last-child(2){
+    width: 25%;
+}
+
+.companies ul li:last-child{
+    width: 25%;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1623px){
+    .companies {
+        padding-right: 2vw;
+        padding-left: 2vw;
+    }
+}
+
+@media screen and (min-width: 1624px) {
+
+    // aside 
+
+    aside {
+        font-size: $sz10;
+    }
+
+    aside ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    aside ul li {
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    // sort
+
+    .search {
+        height: 6vh;
+        margin: 0 1vw;
+        padding: 4vh 1vw;
+        display: flex;
+        align-items: center;
+        font-size: $sz10;
+    }
+
+    .sort {
+        font-size: $sz1;
+    }
+
+    // list
+    
+    .companies h2 {
+        font-size: $sz12;
+    }
+    
+    .companies ul:not(.head-list) {
+        padding: 1vh 0;
+        font-size: $sz8;
+        border: 1px solid $secondary-color;
+    }
+    
+    .companies ul {
+        margin: 0 1vw 2vh 1vw;
+    }
+    
+    .head-list{
+        font-size: $sz10;
+    }
+}

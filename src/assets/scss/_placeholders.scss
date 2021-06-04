@@ -1,0 +1,15 @@
+%border {
+    border: 1px solid $secondary-color;
+}
+
+%border-bottom {
+    border: 1px solid $secondary-color;
+}
+
+%box {
+    box-shadow: 0 5px 1px $main-color; 
+}
+
+%box-r {
+    box-shadow: 10px 0 1px $main-color;
+}

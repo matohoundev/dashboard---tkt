@@ -1,0 +1,39 @@
+// SCSS import 
+
+@import './assets/scss/variables';
+@import './assets/scss/placeholders';
+
+//Fonts theme websites 
+
+@font-face {
+    font-family: 'abril';
+    font-display: swap;
+    src: url('./assets/webfonts/Abril/AbrilFatface-Regular.woff2') format('woff2'),
+          url("./assets/webfonts/Abril/AbrilFatface-Regular.woff") format("woff");
+  } 
+
+/*Fonts Family*/
+
+h1, .navbar-brand, span {
+    font-family: "abril", "Open Sans", Arial, Helvetica, sans-serif;
+  }
+
+h2, h3, h4, p, label, input, li{
+    font-family: Candara, sans-serif, Arial, Helvetica ;
+    font-weight: lighter;
+    color: $color-dark;
+  }
+
+// Delete decoration
+
+a {
+    text-decoration: none;
+  }
+  
+  a :hover{
+    text-decoration: none;
+  }
+
+ul {
+    list-style: none;
+}

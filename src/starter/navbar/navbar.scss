@@ -1,0 +1,27 @@
+@import '../../App.scss';
+
+nav {
+    height: 7vh;
+    padding-left: 5vw;
+    display: flex;
+    align-items: center;
+    @extend %border-bottom; 
+}
+ 
+.navbar-brand {
+
+    color: $main-color;
+    font-size: $sz5;
+}
+
+@media screen and (min-width: 1024px) {
+
+    nav {
+        padding-left: 2.5vw;
+    }
+
+    
+    .navbar-brand {
+        font-size: $sz12;
+    }
+}

@@ -1,0 +1,139 @@
+@import '../App.scss';
+
+//head details
+
+.head-details {
+    height: 30vh;
+    padding: 0 4vw;
+    display: flex;
+    align-items: center;
+}
+
+    .head-details ul:first-child h2 {
+        color: $main-color;
+    }
+
+    .head-details ul:first-child li {
+        margin-right: 2vw;
+    }
+
+    .head-details ul li:not(:last-child) {
+        height: 5vh;
+        margin-bottom: 3vh;
+    }
+
+//historical
+
+.hr {
+    height: 6vh;
+    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
+    @extend %border;
+    @extend %box; 
+}
+
+    .hr h3 {
+        padding-left: 5vw;
+        font-size: $sz11;
+        color: $main-color;
+    }
+
+//figure
+
+.figure div{
+    width: 98%;
+    height: 40vh;
+    margin-bottom: 2vh;
+    display: flex;
+    font-size: $sz8;
+    @extend %border;
+    @extend %box-r;
+}
+
+.figure div ul{
+    width: 50%;
+    padding: 2vh 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.figure div ul:last-child{
+    align-items: flex-end;
+}
+
+.figure div ul:first-of-type li:not(:last-child){
+    color: $main-color;
+}
+
+.figure div ul:first-of-type li:last-child{
+    color: $third-color;
+}
+
+h4 {
+    font-size: $sz10;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1623px){
+    .figure{
+        padding: 0vh 5vw;
+    }
+}
+
+@media screen and (min-width: 1624px) {
+
+    //head details
+    
+    .head-details {
+        padding: 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: $sz9;
+    }
+
+    .head-details ul {
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+    .head-details ul li:first-child{
+            width: 45%;
+            }
+
+    .head-details ul:first-child li {
+        margin-right: 0vw;
+    }    
+
+    .head-details ul li:not(:first-child){
+        width: 30%;
+    }
+ 
+    //figure
+
+    .figure{
+        margin-top: 6vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .figure div{
+        width: 29%;
+        height: 40vh;
+        margin-bottom: 0vh;
+        display: flex;
+    }
+
+    h4 {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-size: $sz9;
+        margin-bottom: 0vh;
+        margin: 0 1vw;
+    }
+}
